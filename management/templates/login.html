@@ -1,4 +1,4 @@
-<h1 style="margin: 1em; text-align: center">{{hostname}}</h1>
+<h1 style="margin: 1em; text-align: center">Simple Mail-in-a-Box Login</h1>
 
 {% if no_users_exist or no_admins_exist %}
 <div class="row">
@@ -24,19 +24,19 @@ sudo tools/mail.py user make-admin me@{{hostname}}</pre>
 
 <div style="margin: 0 auto; max-width: 32em;">
   <form class="form-horizontal" role="form" onsubmit="do_login(); return false;" method="get">
-    <div class="form-group">
+    <div class="form-group" style="margin-left: -12em">
       <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
       <div class="col-sm-9">
         <input name="email" type="email" class="form-control" id="loginEmail" placeholder="Email">
       </div>
     </div>
-    <div class="form-group">
+    <div class="form-group" style="margin-left: -129px">
       <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
       <div class="col-sm-9">
         <input name="password" type="password" class="form-control" id="loginPassword" placeholder="Password">
       </div>
     </div>
-    <div class="form-group">
+    <div class="form-group" style="margin-left: 45px">
       <div class="col-sm-offset-3 col-sm-9">
         <div class="checkbox">
           <label>
@@ -45,7 +45,7 @@ sudo tools/mail.py user make-admin me@{{hostname}}</pre>
         </div>
       </div>
     </div>
-    <div class="form-group">
+    <div class="form-group" style="margin-left: 80px">
       <div class="col-sm-offset-3 col-sm-9">
         <button type="submit" class="btn btn-default">Sign in</button>
       </div>
